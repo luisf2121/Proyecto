@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--libreria de awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <!--boostrat-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+        <!--css local-->
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- logo -->
+            <a class="navbar-brand" href="../index.html"><img src="../multimedia/Logo 2.png" alt="logo" />
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Link de navegacion -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link inicio" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cuerpo-contacto">
+
+        <!--cuerpo de formulario-->
+        
+        <section class=" container-contacto">
+
+            <h1 class="titulo-contactanos">Contáctanos</h1>
+            <!--container general-->
+            <div class="container-fluid">
+
+                <div class="row contacto-caja ">
+                    <!--segundo container, tambien contenido por el container general-->
+                    <div class=" container-fluid contacto-form col-12 col-lg-9">
+    
+                    <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                        
+                        <div class="row ">
+    
+                            <p class="col-12 col-md-6">
+                                <label for="nombre">Nombres</label>
+                                <input type="text" id="nombre">
+                            </p>
+        
+                            <p class="col-12 col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="email">
+                            </p>
+        
+                            <p class="col-12 col-md-6">
+                                <label for="phone">Telefono</label>
+                                <input type="tel" id="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" >
+                            </p>
+        
+                            <p class="col-12 col-md-6">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" id="asunto">
+                            </p>
+                            
+                            <p class="col-12 col-md-12">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" rows="5" required placeholder="Dejanos un mensaje"></textarea>
+                            </p>
+        
+                            <p class="col-12 col-md-12">
+                                <button type="submit">
+                                    Enviar
+                                </button>
+                            </p>
+    
+                        </div>
+    
+                    </form>
+    
+                    </div>
+                    <!--termina segundo container-->
+    
+                    <div class="contacto-info col-12 col-lg-3">
+                        <h4>
+                            Mas informacion
+                        </h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Saman Sullana</li>
+                            <li><i class="fas fa-phone"></i>992 977 333</li>
+                            <li><i class="fas fa-envelope-open-text"></i>luisfernantkm@gmail.com</li>
+                        </ul>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore doloribus nemo unde nesciunt magni at illo saepe, veritatis maiores.</p>
+                        <p>website.com</p>
+                    </div>
+    
+                </div>
+
+            </div>
+            <!--termina container general-->
+        </section>
+
+        <!--fin de cuerpo de formulario-->
+
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="redes">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div>
+                <h4>Copyright © 2022 Todos los derechos reservados</h4>
+            </div>
+        </section>
+    </footer>
+
+    <!-- libreria de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

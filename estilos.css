@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgba(34, 136, 192, 0.766);
+    background-image: linear-gradient(to right, rgb(140, 255, 251), rgb(39, 125, 141));
+}
+.navbar img{
+    height: 50px;
+    width: auto;
+}
+.nav-link {
+    font-size: 20px;
+    color: black !important;
+}
+
+
+/*comienza segunda barra de inicio*/
+.nav{
+    background-color: rgb(140, 255, 251);
+}
+/*termina segunda barra de inicio*/
+
+/*comienzo de esqueleto de inicio*/
+
+.subtitulo{
+    background-color: rgb(33, 134, 152);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 7px 0px;
+    text-shadow: 0 0 3px gray;
+}
+
+/*comienzo de esqueleto de inicio , OFERTAS Y PRODUCTOS*/
+
+.ofertas{
+    min-height: 400px;
+}
+.sub-container-inicio{
+    display: flex;
+
+}
+.nleft{
+    background-image: url("./multimedia/cargador.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.nright{
+    background-image: url("./multimedia/cargador.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.nleftp{
+    background-image: url("./multimedia/producto.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.nrightp{
+    background-image: url("./multimedia/producto.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+/*termina esqueleto de inicio , OFERTAS Y PRODUCTOS*/
+
+/*comienza pagina de productos*/
+
+.nav3{
+    background-color: rgb(178, 235, 245);
+    margin-top: 2px;
+}
+.item{
+    text-align: center;
+}
+.nuevo-estilo{
+    margin: 10px;
+    border: solid 1px rgb(18, 102, 84) ;
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/*comienzo esqueleto de nosotros*/
+
+.titulo1-nosotros{
+    text-align: center;
+    text-transform:uppercase;
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(61, 156, 147);
+}
+.img-nosotros{
+    border: 1px solid rgb(49, 111, 220);
+    border-radius: 4px;
+}
+.nosotros-text{
+    text-align: center;
+    padding: 10px 20px;
+    overflow: auto;
+}
+.nosotros-img{
+    margin: 18px 0;
+}
+
+
+.estilo-nosotros2{
+    margin: 20px 15px;
+}
+.galeria-nosotros{
+    border: 2px solid rgb(39, 125, 141);
+    border-radius: 15px;
+}
+.estilo-mapa{
+    margin-top: 25px;
+    
+}
+.mapa{
+    width: 100%;
+}
+.estilo-tarjeta{
+    margin:30px 5px;
+}
+.img-tarjeta{
+    border: 3px solid rgb(45, 45, 174);
+    border-radius: 15px;
+}
+
+/*termina  esqueleto de nosotros*/
+
+/*estilos de formulario*/
+.cuerpo-contacto{
+    background-color: rgb(17, 90, 94);
+    color: white;
+    font-family: quicksand, sans-serif;
+    padding: 0 1.5em;
+}
+.container-contacto{
+    padding: 0 1.5em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo-contactanos{
+    text-align: center;
+    font-size: 2em;
+    padding: 0.2em;
+}
+.contacto-caja{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255,  .3);
+}
+.contacto-caja > * {
+    padding: 1em;
+}
+.contacto-form{
+    background: rgb(17, 92, 96);
+}
+.contacto-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background:none;
+    border-bottom: 1px solid  #d41844;
+    color:white;
+    outline: none;
+}
+
+.contacto-form form button {
+    background-color:#c83a3a ;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: black;
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus{
+    background-color: #c83a3a;
+    color: white;
+    transition: backgroud-color 1s ease-out;
+    outline: 0;
+}
+
+
+.contacto-info{
+    background:rgb(9, 86, 92);
+    text-align: center;
+}
+
+.contacto-info h4{
+    padding: 15px 0;
+    padding-top: 30px;
+}
+
+.contacto-info ul li{
+    list-style: none;
+    padding: 4px;
+}
+
+.contacto-info p {
+    padding:7px 0;
+}
+
+/*termina estilos de formulario*/
+
+
+/*comienza footer*/
+
+.footer{
+    text-align: center;
+    background-color: rgb(39, 125, 141);
+    color: white;
+    padding: 10px;
+}
+.redes{
+    font-size: 35px;
+    letter-spacing: 20px;
+}
+.redes i:hover{
+    color: aqua;
+    cursor: pointer;
+}
+/*termina footer*/
+
+/*comienza los @media*/
+
+@media screen and (min-width: 720px){
+    
+    .barra-productos{
+        display: none;
+    }
+    .estilo-tarjeta{
+        margin-bottom: 40px;
+    }
+    .titulo-contactanos{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 719px){
+    
+    .barra-productos2{
+    display: none;
+    }
+}
+@media screen and (min-width: 980px){
+    
+    .nosotros-text{
+        padding: 10px 40px;   
+    }
+    .estilo-nosotros2{
+        margin: 20px 35px;
+    }
+    .mapa{
+        width: 100%;
+        height: 250px;
+        padding-top: 10px;
+    }
+
+    .contacto-info h4,
+    .contacto-info ul li,
+    .contacto-info p{
+        text-align: left;
+    }
+}

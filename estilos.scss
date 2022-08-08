@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    $color1:rgb(39, 125, 141);
+    $alto:100px;
+    $ancho:100%;
+
+    @mixin valor ($ancho, $alto, $color,) {
+        width: $ancho;
+        height: $alto;
+        color: $color;
+    }
+
+.navbar {
+  background-color: rgba(34, 136, 192, 0.766);
+  background-image: linear-gradient(
+    to right,
+    rgb(140, 255, 251),
+    $color1
+  );
+
+  img {
+    height:($alto - 50px);
+    width: auto;
+  }
+
+  ul .nav-link {
+    font-size: 20px;
+    color: black !important;
+  }
+}
+
+/*comienza segunda barra de inicio*/
+.nav {
+  background-color: rgb(140, 255, 251);
+
+  .nav-link {
+    font-size: 20px;
+    color: black !important;
+  }
+}
+/*termina segunda barra de inicio*/
+
+/*comienzo de esqueleto de inicio*/
+
+.subtitulo {
+  background-color: $color1;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 7px 0px;
+  text-shadow: 0 0 3px gray;
+}
+
+.sub-container-ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .img-ofertas {
+    width: 350px;
+    height: auto;
+    margin: 20px 10px;
+    border: 1px solid rgb(5, 62, 83);
+    border-radius: 5px;
+  }
+
+  .sub-img-ofertas {
+    height: 100%;
+    width: $ancho;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.titulo-productos {
+  margin-top: 40px;
+}
+
+/*termina esqueleto de inicio , OFERTAS Y PRODUCTOS*/
+
+/*comienza pagina de productos*/
+
+.nav3 {
+  background-color: rgb(178, 235, 245);
+  margin-top: 2px;
+}
+.item {
+  text-align: center;
+  :hover{
+    transform: scale(1.07);
+    transition:1.7s;
+}
+
+  .nuevo-estilo {
+    margin: 10px;
+    border: solid 1px rgb(18, 102, 84);
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/*comienzo esqueleto de nosotros*/
+
+.titulo1-nosotros {
+  @extend .item;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(90, 192, 210);
+}
+
+.nosotros-container div div {
+  .nosotros-text {
+    @extend .item;
+    padding: 10px 20px;
+    overflow: auto;
+  }
+  img {
+    border: 1px solid rgb(49, 111, 220);
+    border-radius: 4px;
+  }
+}
+.estilo-nosotros {
+  padding: 28px 15px;
+}
+.estilo-nosotros2 {
+  margin: 20px 15px;
+
+  .galeria-nosotros {
+    border: 2px solid rgb(39, 125, 141);
+    border-radius: 15px;
+  }
+}
+
+.estilo-mapa {
+  margin-top: 25px;
+
+  .mapa {
+    width: $ancho;
+  }
+}
+
+.estilo-tarjeta {
+  margin: 30px 5px;
+  .img-tarjeta {
+    border: 2px solid rgb(39, 125, 141);
+    border-radius: 15px;
+  }
+}
+
+/*termina  esqueleto de nosotros*/
+
+/*estilos de formulario*/
+.cuerpo-contacto {
+  background-color: rgb(17, 90, 94);
+  color: white;
+  font-family: quicksand, sans-serif;
+  padding: 0 1.5em;
+
+  .container-contacto {
+    padding: 0 1.5em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo-contactanos {
+    text-align: center;
+    font-size: 2em;
+    padding: 0.2em;
+  }
+  .contacto-caja {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  }
+  .contacto-caja > * {
+    padding: 1em;
+  }
+  .contacto-form {
+    background: rgb(17, 92, 96);
+    form p {
+      margin: 0;
+      padding: 1em;
+    }
+    form button {
+        background-color: #c83a3a;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+        color: black;
+      }
+  }
+}
+.boton{
+  width: $ancho;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #d41844;
+  color: white;
+  outline: none;
+}
+.contacto-form form input{
+    @extend .boton;
+}
+.contacto-form form textarea {
+    @extend .boton;
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus {
+  background-color: #c83a3a;
+  color: white;
+  transition: backgroud-color 1s ease-out;
+  outline: 0;
+}
+
+.contacto-info {
+  background: rgb(9, 86, 92);
+  text-align: center;
+  h4 {
+    padding: 15px 0;
+    padding-top: 30px;
+  }
+  ul li {
+    list-style: none;
+    padding: 4px;
+    i{
+        padding-right: 8px;
+    }
+  }
+  p {
+    padding: 7px 0;
+  }
+}
+/*termina estilos de formulario*/
+
+/*pagina de servicio tecnico*/
+$tarea: (
+    tar1:red,
+    tar2:green,
+    tar3:orange,
+    tar4:purple
+);
+@each $red, $color in $tarea {
+    .tarea--#{$red} {
+        width: 100%;
+        height: 300px;
+        background-color: $color;
+        font-size: 40px;
+        text-align: center;
+        padding: 50px 0px;
+    }
+}
+
+/*segundo map*/
+$tarea2: (
+    tamaño1:600px,
+    tamaño2:400PX,
+    tamaño3:250px,
+    tamaño4:100px
+);
+@each $tam, $heigth in $tarea2 {
+    .tarea2--#{$tam} {
+        color:blue;
+        background-color: aqua;
+        margin: 20px 10px;
+        height: $heigth;
+    }
+}
+
+/*termina pagina de servicio tecnico*/
+
+/*comienza footer*/
+.footer {
+    text-align:left;
+    background-color: $color1;
+    color: white;
+    margin-top:10px;
+    padding: 30px 20px 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    .footer-item{
+        margin: 8px 7px;
+        padding: 5px 2px; 
+    }
+}
+.footer-p{
+    margin: 7px 2px;
+    padding: 12px 14px 4px 4px;
+    opacity: 0.7;
+}
+.footer-lista{
+    list-style: none;
+    opacity: 0.7;
+    li{
+        padding:4px 0;
+    }
+}
+.redes{
+    font-size: 35px;
+    letter-spacing: 5px;
+    i:hover{
+        color: aqua;
+        cursor: pointer;
+    }
+}
+.footer-text{
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.8;
+    padding-top: 30px;
+}
+/*termina footer*/
+
+/*whastapp*/
+.whatsapp{
+    @include valor (60px, 60px, rgb(42, 183, 42) );
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    text-align: center;
+    font-size: 50px;
+    a i{
+        color: rgb(42, 183, 42);
+    }
+    a i:hover{
+        transform: scale(1.25);
+        transition:1s;
+    }
+}
+
+/*comienza los @media*/
+
+@media screen and (max-width: 540px){
+    .navbar{
+        height: 55px;
+    }
+    .navbar img{
+        width: 80px;
+        height: 45px;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 720px){
+    
+    .barra-productos{
+        display: none;
+    }
+    .estilo-tarjeta{
+        margin-bottom: 40px;
+    }
+    .titulo-contactanos{
+        font-size: 3em;
+    }
+    .img-ofertas{
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 719px){
+    
+    .barra-productos2{
+    display: none;
+    }
+}
+@media screen and (min-width: 980px){
+    
+    .nosotros-text{
+        padding: 10px 40px;   
+    }
+    .estilo-nosotros2{
+        margin: 20px 35px;
+    }
+    .mapa{
+        width: 100%;
+        height: 250px;
+        padding-top: 10px;
+    }
+
+    .contacto-info h4,
+    .contacto-info ul li,
+    .contacto-info p{
+        text-align: left;
+    }
+    .carousel-img{
+        height: 350px;
+    }
+    .sub-container-ofertas{
+        .img-ofertas{
+            width: 400px;
+        }
+    }
+    
+    
+}

@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Contamos con accesorios para tu celular de la mejor calidad y servicio tencico garantizado">
+  <meta name="keywords" content="Reparacion, celulares, tablets, servicio tecnico">
+  <meta name="title" content="FernanCel">
+
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon_package_v0.16 (1)/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16 (1)/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16 (1)/favicon-16x16.png">
+  <link rel="manifest" href="favicon_package_v0.16 (1)/site.webmanifest">
+  <link rel="mask-icon" href="favicon_package_v0.16 (1)/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#df3939">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,13 +74,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./multimedia/repa.jpg" class="d-block w-100" alt="Reparacion">
+          <img src="./multimedia/repa.jpg" class="d-block w-100 carousel-img" alt="Reparacion">
         </div>
         <div class="carousel-item">
-          <img src="./multimedia/general 1.png" class="d-block w-100" alt="Productos">
+          <img src="./multimedia/general 1.png" class="d-block w-100 carousel-img" alt="Productos">
         </div>
         <div class="carousel-item">
-          <img src="./multimedia/general 2.png" class="d-block w-100" alt="Productos">
+          <img src="./multimedia/general 2.png" class="d-block w-100 carousel-img" alt="Productos">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -83,17 +97,17 @@
     <!--comienzo de segunda barra de navegacion-->
       <nav class="nav">
         <a class="nav-link" href="#">Categorias</a>
-        <a class="nav-link" href="#">Servicio Tecnico</a>
+        <a class="nav-link" href="./pages/serviciotecnico.html">Servicio Tecnico</a>
       </nav>
     <!--termina segunda barra de navegacion-->
 
     <!--comienza ofertas en incio-->
     <h2 class="subtitulo">Ofertas</h2>
-    <section class="container ofertas">
-      <div class="row sub-container-inicio">
-        <div class="nleft col-md-6 col-sm-12"></div>
-        <div class="nright col-md-6 col-sm-12"></div>
-        <div class="nright col-md-6 col-sm-12"></div>
+    <section class=" ofertas-container">
+      <div class="sub-container-ofertas">
+        <div class="nleft img-ofertas"><img src="multimedia/cargador.jpg"  alt="cargador" class="sub-img-ofertas"/></div>
+        <div class="nright img-ofertas"><img src="multimedia/cargador.jpg" alt="cargador" class="sub-img-ofertas"/></div>
+        <div class="nright img-ofertas"><img src="multimedia/cargador.jpg" alt="cargador" class="sub-img-ofertas"/></div>
       </div>
     </section>
 
@@ -101,12 +115,12 @@
 
     <!--comienza productos en incio-->
 
-    <h2 class="subtitulo">Productos</h2>
-    <section class="container productos">
-      <div class="row sub-container-inicio">
-        <div class="nleftp col-md-6 col-sm-12"></div>
-        <div class="nrightp col-md-6 col-sm-12"></div>
-        <div class="nrightp col-md-6 col-sm-12"></div>
+    <h2 class="subtitulo titulo-productos">Productos</h2>
+    <section class=" ofertas-container">
+      <div class="sub-container-ofertas">
+        <div class="nleft img-ofertas"><img src="multimedia/oferta.jpg"  alt="cargador" class="sub-img-ofertas"/></div>
+        <div class="nright img-ofertas"><img src="multimedia/oferta.jpg" alt="cargador" class="sub-img-ofertas"/></div>
+        <div class="nright img-ofertas"><img src="multimedia/oferta.jpg" alt="cargador" class="sub-img-ofertas"/></div>
       </div>
     </section>
     <!--termina productos en incio-->
@@ -114,17 +128,73 @@
   </main>
 
   <footer>
-    <section class="footer">
-      <div class="redes">
-        <i class="fa-brands fa-facebook-square"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-      </div>
-      <div>
-        <h4>Copyright © 2022 Todos los derechos reservados</h4>
+    <section class="footer container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="footer-item">
+            <div class="footer-log"><img class="footer-log-img" src="./multimedia/Logo 2.png" alt="logo" width="130px"> </div>
+            <div class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vitae</div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="footer-item">
+            <h4><strong>Productos</strong></h4>
+            <ul class="footer-lista">
+              <li>Cargadores</li>
+              <li>Ariculares</li>
+              <li>Accesorios</li>
+              <li>Cables</li>
+              <li>Micro-SD</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="footer-item">
+            <h4><strong>Servicio Tecnico</strong></h4>
+            <ul class="footer-lista">
+              <li>Pantallas</li>
+              <li>Tablet</li>
+              <li>Android</li>
+              <li>Iphone</li>
+              <li>Especificar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="footer-item ">
+            <h4><strong>Informacion Legal</strong></h4>
+            <ul class="footer-lista">
+              <li>Copyright</li>
+              <li>Politica de cookies</li>
+              <li>Avisos legales</li>
+              <li>Condiciones de Uso</li>
+              <li>Condiciones de compra</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="footer-item">
+            <div class="redes">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="footer-text">
+            <h4 >Copyright © 2022 Todos los derechos reservados</h4>
+          </div>
+        </div>
       </div>
     </section>
   </footer>
+
+  <!--whatsapp-->
+  <div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=992977333"><i class="fa-brands fa-whatsapp-square"></i></a> 
+  </div>
 
   <!-- libreria de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -31,36 +31,21 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <!-- logo -->
-      <a class="navbar-brand" href="./index.html"><img src="./multimedia/Logo 2.png" alt="logo" />
-      </a>
-
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+  <header class="header1">
+    <nav class="nav1">
+      <a href="#" class="logo1 nav-link1"> <img src="./multimedia/Logo 2.png" alt="Logo" class="logo-img"> </a>
+      <button class="nav-toggle1" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
       </button>
-
-      <!-- Link de navegacion -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link inicio" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/producto.html">Producto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav-menu1 nav-menu1-visible">
+        <li class="nav-menu-item1"><a href="./index.html" class="nav-menu-link1 nav-link1">Inicio</a></li>
+        <li class="nav-menu-item1"><a href="./pages/nosotros.html" class="nav-menu-link1 nav-link1">Nosotros</a></li>
+       <li class="nav-menu-item1"><a href="./pages/producto.html" class="nav-menu-link1 nav-link1">Tienda</a></li>
+         <li class="nav-menu-item1"><a href="./pages/serviciotecnico.html" class="nav-menu-link1 nav-link1">Servicios</a></li>
+        <li class="nav-menu-item1"><a href="./pages/contacto.html" class="nav-menu-link1 nav-link1 nav-menu-link_active1">Contacto</a></li>
+      </ul>
     </nav>
-  </header>
+</header>
 
   
   <main>
@@ -95,15 +80,15 @@
     <!--Fin de carrusel -->
 
     <!--comienzo de segunda barra de navegacion-->
-      <nav class="nav">
+     <!-- <nav class="nav">
         <a class="nav-link" href="#">Categorias</a>
         <a class="nav-link" href="./pages/serviciotecnico.html">Servicio Tecnico</a>
-      </nav>
+      </nav>-->
     <!--termina segunda barra de navegacion-->
 
     <!--comienza ofertas en incio-->
     <h2 class="subtitulo">Ofertas</h2>
-    <section class=" ofertas-container">
+    <section class="ofertas-container">
       <div class="sub-container-ofertas">
         <div class="nleft img-ofertas"><img src="multimedia/cargador.jpg"  alt="cargador" class="sub-img-ofertas"/></div>
         <div class="nright img-ofertas"><img src="multimedia/cargador.jpg" alt="cargador" class="sub-img-ofertas"/></div>
@@ -203,6 +188,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+
+    <!--enlace a documento de js local-->
+    <script src="./index.js"></script>
 </body>
 
 </html>

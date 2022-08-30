@@ -10,6 +10,9 @@
     <meta name="keywords" content="Comienzos, reparacion, celulares, tablets, fernancel">
     <meta name="title" content="Nosotros">
 
+     <!--michalsnik animacion-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="152x152" href="../favicon_package_v0.16 (1)/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16 (1)/favicon-32x32.png">
@@ -32,7 +35,7 @@
 
     <header class="header1">
         <nav class="nav1">
-          <a href="../index.html" class="logo1 nav-link1"> <img src="../multimedia/Logo 2.png" alt="Logo" class="logo-img"> </a>
+          <a href="../index.html" class="logo1 nav-link1"> <img src="../multimedia/logo blanco transparente.png" alt="Logo" class="logo-img"> </a>
           <button class="nav-toggle1" aria-label="Abrir Menu">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -86,38 +89,38 @@
         <section class="container-fluid">
             <div class="row">
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-left">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/conector tipo c.jpeg" alt="Conector tipo c"
                             class="img-fluid galeria-nosotros" >
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-right">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/pcb dañada.jpeg" alt="pcb dañado" class="img-fluid galeria-nosotros" >
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-left">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/pcb.jpeg" alt="pcb" class="img-fluid galeria-nosotros" >
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-right">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/padsdañados.jpeg" alt="pads dañados" class="img-fluid galeria-nosotros" >
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-left">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/circuito.jpeg" alt="placa" class="img-fluid galeria-nosotros" >
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2">
+                <div class="col-12 col-sm-6 col-lg-4 nosotros-img2" data-aos="flip-right">
                     <div class="estilo-nosotros2">
                         <img src="../multimedia/sim.jpeg" alt="conector sim" class="img-fluid galeria-nosotros" >
                     </div>
@@ -139,7 +142,19 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="estilo-tarjeta">
-                        <img src="../multimedia/tarjeta.png" alt="tarjeta - logo" class="img-fluid img-tarjeta" />
+                      <div class="contacto-info col-12 col-lg-3">
+                        <h4>
+                            Mas informacion
+                        </h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Saman Sullana</li>
+                            <li><i class="fas fa-phone"></i>992 977 333</li>
+                            <li><i class="fas fa-envelope-open-text"></i>luisfernantkm@gmail.com</li>
+                        </ul>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore doloribus nemo unde nesciunt magni at illo saepe, veritatis maiores.</p>
+                        <p>website.com</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -228,6 +243,12 @@
 
         <!--enlace a documento de js local-->
         <script src="../index.js"></script>
+
+        <!--michalsnik animacion-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

@@ -146,10 +146,6 @@ body {
   width: 100%;
 }
 
-.mesa-trabajo-img2 {
-  display: none;
-}
-
 .servicios-caja {
   padding: 30px 0px;
   display: grid;
@@ -227,12 +223,8 @@ body {
   width: 100%;
 }
 
-.estilo-tarjeta {
-  margin: 30px 5px;
-}
-.estilo-tarjeta .img-tarjeta {
-  border: 2px solid rgb(39, 125, 141);
-  border-radius: 15px;
+.estilo-cajita-informacion {
+  margin: 15px 15px;
 }
 
 /*termina  esqueleto de nosotros*/
@@ -389,22 +381,8 @@ body {
   }
 }
 @media screen and (min-width: 720px) {
-  .mesa-trabajo-img1 {
-    display: none;
-  }
-  .mesa-trabajo-img2 {
-    background-image: url("./multimedia/mesa v2.png");
-    background-size: 100%;
-  }
-  .mesa-servicio {
-    width: 100%;
-    height: 400px;
-  }
   .barra-productos {
     display: none;
-  }
-  .estilo-tarjeta {
-    margin-bottom: 40px;
   }
   .titulo-contactanos {
     font-size: 3em;
@@ -426,6 +404,9 @@ body {
   }
 }
 @media screen and (max-width: 719px) {
+  .mesa-trabajo-img1 {
+    display: none;
+  }
   .barra-productos2 {
     display: none;
   }
